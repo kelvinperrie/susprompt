@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <style>
+            html {
+                font-family: "Segoe UI";
+            }
+
+            .title {
+                font-size: 1.3em;
+            }
+            .dialog {
+                width: 500px;
+                margin:auto;
+                border: 1px solid #C4C4C4;
+                border-radius: 5px;
+                -webkit-box-shadow: 0px 2px 5px 0px #C4C4C4; 
+                box-shadow: 0px 2px 5px 0px #C4C4C4;
+                user-select: none;
+                padding: 1em;
+            }
+            .field-set {
+                width: 100%;
+            }
+            .field-label {
+                width: 90px;
+            }
+            .field-input-container {
+            }
+            .field-input-container , .field-label {
+                display: inline-block;
+            }
+            input {
+                width: 375px;
+                padding: 7px;
+                margin: 5px;
+                font-size: .95em;
+                font-family: "Segoe UI";
+                border-radius: 5px;
+                border-color: #dadada;
+                border-style: solid;
+            }
+            input:focus { 
+                outline: none !important;
+                border-color: #227ee0;
+                /* border: 1px solid #719ECE; */
+            }
+            button {
+                background-color: #fff;
+                border: 1px solid #dadada;
+                color: #227ee0;
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 5px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+            .primary {
+                background-color: #227ee0;
+                color: white;
+            }
+            .button-panel{
+                margin-top: 40px;
+                text-align: right;
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="dialog">
+            <div class="title">Sign in</div>
+            <p>
+                The proxy server requires a username and password.<br/>
+                Your connect to this site is not private.
+            </p>
+            <div class="field-set">
+                <div class="field-label">Username</div>
+                <div class="field-input-container">
+                    <input type="text"/>
+                </div>
+            </div>
+            <div class="field-set">
+                <div class="field-label">Password</div>
+                <div class="field-input-container">
+                    <input type="text"/>
+                </div>
+            </div>
+            <div class="button-panel">
+                <button class="primary">Sign In</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+        <br/>
+        <br/>
+
+        <div style="text-align: center;">
+            <img src="source images/proxy web - cropped.png" style="margin: auto; width: 728px;" />
+        </div>
+    </body>
+</html>
